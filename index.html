@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Sidebar</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+
+            <!-- Logo -->
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <span class="logo-text">DashFlow</span>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="navigation">
+
+                <a href="#" class="nav-link active">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="link-text">Dashboard</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span class="link-text">Analytics</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-folder"></i>
+                    <span class="link-text">Projects</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="link-text">Team</span>
+                </a>
+
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="link-text">Settings</span>
+                </a>
+
+            </nav>
+
+            <!-- Toggle Button -->
+            <button class="toggle-btn" id="toggleBtn"
+                    aria-label="Collapse sidebar"
+                    aria-expanded="true">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="top-bar">
+                <h1>Dashboard</h1>
+                <div class="user-profile">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span>Welcome back!</span>
+                </div>
+            </header>
+
+            <section class="content">
+                <h2>Welcome to DashFlow 👋</h2>
+                <p>
+                    Your dashboard is ready. Use the sidebar to
+                    navigate between different sections.
+                </p>
+
+                <div class="cards">
+                    <div class="card">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <h3>Analytics</h3>
+                        <p>Track your performance.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <h3>Projects</h3>
+                        <p>Manage your projects.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Team</h3>
+                        <p>Connect with your team.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
